@@ -51,6 +51,7 @@ var server = net.createServer((client) => {
         }
         catch (e) {
             console.log('err', e);
+            console.log(data.toString('hex'));
             return;
         }
         console.log(gt06);
